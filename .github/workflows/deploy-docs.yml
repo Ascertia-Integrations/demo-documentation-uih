@@ -23,7 +23,7 @@ on:
 jobs:
   deploy:
     if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.release_action != 'prune') }}
-    uses: Ascertia-Integrations/docusaurus-github-pages-poc/.github/workflows/reusable-deploy-docs.yml@main
+    uses: Ascertia-Integrations/documentation-engine-lib/.github/workflows/reusable-deploy-docs.yml@main
     secrets: inherit
     with:
       # Use `npm ci` once package-lock.json is stabilized for this repo.
@@ -36,7 +36,7 @@ jobs:
 
   prune-deleted-release:
     if: ${{ github.event_name == 'delete' && github.event.ref_type == 'branch' }}
-    uses: Ascertia-Integrations/docusaurus-github-pages-poc/.github/workflows/reusable-deploy-docs.yml@main
+    uses: Ascertia-Integrations/documentation-engine-lib/.github/workflows/reusable-deploy-docs.yml@main
     secrets: inherit
     with:
       install_command: npm install
@@ -50,7 +50,7 @@ jobs:
 
   prune-manual-release:
     if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.release_action == 'prune' }}
-    uses: Ascertia-Integrations/docusaurus-github-pages-poc/.github/workflows/reusable-deploy-docs.yml@main
+    uses: Ascertia-Integrations/documentation-engine-lib/.github/workflows/reusable-deploy-docs.yml@main
     secrets: inherit
     with:
       install_command: npm install
