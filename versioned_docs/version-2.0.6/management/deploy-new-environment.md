@@ -3,13 +3,22 @@ sidebar_label: "Deploy New Environment"
 sidebar_position: 2
 ---
 
+import gitbookAsset1 from "./deploy-new-environment.assets/Screenshot from 2025-06-02 14-12-18 (2).png";
+import gitbookAsset2 from "./deploy-new-environment.assets/Screenshot from 2025-06-04 12-06-18.png";
+import gitbookAsset3 from "./deploy-new-environment.assets/Screenshot from 2025-06-04 12-08-19.png";
+import gitbookAsset4 from "./deploy-new-environment.assets/Screenshot from 2025-06-02 14-14-38.png";
+import gitbookAsset5 from "./deploy-new-environment.assets/Screenshot from 2025-06-02 14-18-13 (3).png";
+import gitbookAsset6 from "./deploy-new-environment.assets/Screenshot from 2025-06-02 14-21-00.png";
+import gitbookAsset7 from "./deploy-new-environment.assets/Screenshot from 2025-06-02 14-26-21.png";
+import gitbookAsset8 from "./deploy-new-environment.assets/Screenshot from 2025-06-02 14-31-38.png";
+
 # Deploy New Environment
 
 Deploys and setup a new environment using the templates under the `./config` folder.
 
 **Environment to deploy.** First you will need to select the environment you desire to deploy. Once selected you'll have access to different options based on the environment and current setup.
 
-<figure><img src="/img/gitbook/Screenshot from 2025-06-02 14-12-18 (2).png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset1} alt="" /><figcaption></figcaption></figure>
 
 ### **1. \[Optional] SSL Configuration**
 
@@ -21,7 +30,7 @@ Deploys and setup a new environment using the templates under the `./config` fol
 
 First specify the full DNS name for the server. This must match the one specified within the SSL certificates
 
-<figure><img src="/img/gitbook/Screenshot from 2025-06-04 12-06-18.png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset2} alt="" /><figcaption></figcaption></figure>
 
 Using a different terminal, copy the certificates to the path and names:\
 `Public: /var/ascertia/unityPortal/nginxData/ssl/ssl.crt`\
@@ -31,7 +40,7 @@ Using a different terminal, copy the certificates to the path and names:\
 **Note:** The path and names must match exactly.
 :::
 
-<figure><img src="/img/gitbook/Screenshot from 2025-06-04 12-08-19.png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset3} alt="" /><figcaption></figcaption></figure>
 
 The SSL configs will then be updated and the rest of the preparation process continue.
 
@@ -45,24 +54,24 @@ Note that replacing a previous environment will render any associated configurat
 If you do choose to override it, a backup will be placed in the "./backups" folder should there be a need to retrieve it later.
 :::
 
-<figure><img src="/img/gitbook/Screenshot from 2025-06-02 14-14-38.png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset4} alt="" /><figcaption></figcaption></figure>
 
 ### Common Deployment Steps
 
 **Stop all services.** To continue deploying a new environment, all previous started services must first be stoped. Confirm and continue.
 
-<figure><img src="/img/gitbook/Screenshot from 2025-06-02 14-18-13 (3).png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset5} alt="" /><figcaption></figcaption></figure>
 
 Next the the user can select the version of the UIH service they want to deploy. &#x20;
 
-<figure><img src="/img/gitbook/Screenshot from 2025-06-02 14-21-00.png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset6} alt="" /><figcaption></figcaption></figure>
 
 Now you can select the version of the chat service you want to deploy
 
-<figure><img src="/img/gitbook/Screenshot from 2025-06-02 14-26-21.png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset7} alt="" /><figcaption></figcaption></figure>
 
 Various steps will now be completed to start up the containers and install needed tools. The user can monitor these steps and once complete the success message will be displayed:
 
-<figure><img src="/img/gitbook/Screenshot from 2025-06-02 14-31-38.png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset8} alt="" /><figcaption></figcaption></figure>
 
 The message `UnityPortal successfully deployed`  marks the process as completed.

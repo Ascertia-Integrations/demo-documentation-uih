@@ -5,6 +5,8 @@ sidebar_label: "Uninstalling"
 sidebar_position: 6
 ---
 
+import gitbookAsset1 from "./uninstalling.assets/image (20).png";
+
 # Uninstalling
 
 ### **Uninstalling the Unity Integrations Hub**
@@ -19,7 +21,7 @@ Browse to the portal folder: `/var/ascertia/unityPortal`
 
 Start the unity service and stop any running deployments by pressing `[6]`, then selecting `[y]`.
 
-<figure><img src="/img/gitbook/image (20).png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset1} alt="" /><figcaption></figcaption></figure>
 
 Once stopped, you can exit the menu, **the Unity Integrations Hub has been removed from the machine.**
 

@@ -5,6 +5,8 @@ sidebar_label: "Deploying Static Resources on Apache"
 sidebar_position: 5
 ---
 
+import gitbookAsset1 from "./deploying-static-resources-on-apache.assets/image (14).png";
+
 # Deploying Static Resources on Apache
 
 Static resources are used by the different integrations connected to the given **Unity Integrations Hub** each integration might use this files for different purposes.
@@ -35,7 +37,7 @@ Usually integrations will use a sub-folder with the name of the integration (e.g
 >
 > If provided with the static file: `static/sample-image.png` , it should be copied into the apache folder:  `.../apache/sharepoint/sample-image.png` ).
 
-<figure><img src="/img/gitbook/image (14).png" alt="" width="563" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset1} alt="" width="563" /><figcaption></figcaption></figure>
 
 ### Verify the installation
 

@@ -5,6 +5,8 @@ sidebar_position: 1
 slug: "/"
 ---
 
+import gitbookAsset1 from "./index.assets/Slide3.png";
+
 # Welcome
 
 The **Unity Integrations Hub** is a backend component, that enables a new generation of integrations. The Hub offloads a lot of the responsibilities common to the different integrations, into a single place.&#x20;
@@ -36,7 +38,7 @@ This API serves as the backbone for third party application integrations, enabli
 
 The **Unity Integrations Hub** makes the integrations smaller while providing the same functionality. As integrations are smaller, and the complexity lies on the **UIH,** enables: faster development of new integrations, better maintainability, and improvements on QA, among others.
 
-<figure><img src="/img/gitbook/Slide3.png" alt="" width="375" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset1} alt="" width="375" /><figcaption></figcaption></figure>
 
 > _Being a server side middle layer, final users won't have to interact orknow of the existence of the Unity Integrations Hub. **It is transparent for the final user.**_
 

@@ -5,6 +5,8 @@ sidebar_label: "Management"
 sidebar_position: 1
 ---
 
+import gitbookAsset1 from "./index.assets/Screenshot from 2025-06-02 14-02-13.png";
+
 # Management
 
 The unity-service script provides basic management functionality for the Unity Integrations Hub.&#x20;
@@ -24,6 +26,6 @@ The unity-service script provides basic management functionality for the Unity I
 7. **Stop All**\
    Stops all the running services.
 
-<figure><img src="/img/gitbook/Screenshot from 2025-06-02 14-02-13.png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset1} alt="" /><figcaption></figcaption></figure>
 
 > The options might change order between different versions

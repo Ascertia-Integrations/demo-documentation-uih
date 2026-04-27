@@ -3,6 +3,9 @@ sidebar_label: "Unity Integrations Hub installation"
 sidebar_position: 1
 ---
 
+import gitbookAsset1 from "./index.assets/Screenshot from 2025-06-02 12-34-40.png";
+import gitbookAsset2 from "./index.assets/Screenshot from 2025-06-04 11-57-15.png";
+
 # Unity Integrations Hub installation
 
 :::tip
@@ -21,7 +24,7 @@ And install using `apt`:&#x20;
 sudo apt install ./unity-portal_2.0.5_24.deb
 ```
 
-<figure><img src="/img/gitbook/Screenshot from 2025-06-02 12-34-40.png" alt="UIH installer successful execution" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset1} alt="UIH installer successful execution" /><figcaption></figcaption></figure>
 
 :::info
 **Note:** The last warning about “Permission denied” is expected in a restricted environment. This does not affect usability of the system:
@@ -31,7 +34,7 @@ sudo apt install ./unity-portal_2.0.5_24.deb
 
 The installer deploys the **Unity Integrations Hub** in the directory: `/var/ascertia/unityPortal` .
 
-<figure><img src="/img/gitbook/Screenshot from 2025-06-04 11-57-15.png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset2} alt="" /><figcaption></figcaption></figure>
 
 * **active\_environment:** this is the bookmark for the currently active environment.
 * **apacheData:** This is where all the files served by the apache service is stored.
