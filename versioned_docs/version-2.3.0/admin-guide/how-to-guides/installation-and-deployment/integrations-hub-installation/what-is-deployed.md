@@ -4,11 +4,13 @@ sidebar_label: "What is Deployed"
 sidebar_position: 4
 ---
 
+import gitbookAsset1 from "./what-is-deployed.assets/image (19).png";
+
 # What is Deployed
 
 The installer deploys the **Unity Integrations Hub** in the directory: `/opt/ascertia/int-hub` .
 
-<figure><img src="/img/gitbook/image (19).png" alt="" /><figcaption></figcaption></figure>
+<figure><img src={gitbookAsset1} alt="" /><figcaption></figcaption></figure>
 
 :::info
 **Understanding the Folder Structure:** Each folder maps directly to a specific containerized service within the Hub as a "volume," ensuring data persists even if the Docker containers restart. For example, `unityData/` powers the central authentication and document-routing module, while `chatData/` specifically bridges message-based platforms (like Microsoft Teams) into that flow.
